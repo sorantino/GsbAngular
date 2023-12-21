@@ -1,11 +1,6 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-  <div class="form-group">
-    <label for="email">Email:</label>
-    <input type="email" class="form-control" id="email" formControlName="email" required>
-  </div>
-  <div class="form-group">
-    <label for="password">Mot de passe:</label>
-    <input type="password" class="form-control" id="password" formControlName="password" required>
-  </div>
-  <button type="submit" class="btn btn-primary">Envoyer</button>
+<!-- login.component.html -->
+<form>
+  <label>Email <input type="text" [formControl]="email"/> </label>
+  <label>Password <input type="password" [formControl]="password"/> </label>
+  <button (click)="apiRequest()">Envoyer</button>
 </form>

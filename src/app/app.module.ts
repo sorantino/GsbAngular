@@ -1,24 +1,24 @@
+// app.module.ts
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import {routes} from "./app.routes";
 
-const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  // Ajoute d'autres routes ici
-];
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent
+    // LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    LoginComponent,
     RouterModule.forRoot(routes)
   ],
   providers: [],
