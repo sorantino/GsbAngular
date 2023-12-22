@@ -1,1 +1,11 @@
-<p>liste-frais works!</p>
+<!-- liste-frais.component.html -->
+
+<div>
+  <h2>Liste des frais</h2>
+  <ul>
+    <li *ngFor="let frais of listeFrais">
+      <!-- Affichez les détails du frais selon la structure de votre API -->
+      {{ frais.nomFrais }} - {{ frais.montant }}
+    </li>
+  </ul>
+</div>
